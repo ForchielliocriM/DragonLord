@@ -1,0 +1,54 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+group = 'it.unicam.cs.mpgc'
+version = '1.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+application {
+    mainClass = "it.unicam.cs.mpgc.rpg118716.Main"
+    // Necessario per JavaFX + moduli Java
+    applicationDefaultJvmArgs = [
+            '--add-opens', 'java.base/java.lang=ALL-UNNAMED',
+            '--add-opens', 'java.base/java.util=ALL-UNNAMED'
+    ]
+}
+
+javafx {
+    version = "21"
+    modules = ['javafx.controls', 'javafx.fxml', 'javafx.graphics']
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Hibernate (ORM)
+    implementation 'org.hibernate.orm:hibernate-core:6.6.4.Final'
+
+    // Database H2 (embedded, nessuna installazione)
+    implementation 'com.h2database:h2:2.3.232'
+
+    // Jakarta Persistence API
+    implementation 'jakarta.persistence:jakarta.persistence-api:3.2.0'
+
+    // Logging (richiesto da Hibernate)
+    implementation 'org.slf4j:slf4j-simple:2.0.16'
+
+    // Test
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.3'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test {
+    useJUnitPlatform()
+}

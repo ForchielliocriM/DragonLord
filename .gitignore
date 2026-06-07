@@ -1,0 +1,18 @@
+# Gradle
+.gradle/
+build/
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+out/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database H2 (file locali di gioco)
+*.db
+*.mv.db
+*.trace.db
