@@ -1,0 +1,10 @@
+<!ELEMENT items (item+)>
+
+<!ELEMENT item (name, description)>
+<!ATTLIST item
+        id    ID     #REQUIRED
+        type  CDATA  #REQUIRED
+        value CDATA  #REQUIRED>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>

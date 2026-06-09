@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE monsters SYSTEM "monsters.dtd">
+
+<monsters>
+
+    <monster id="slime">
+        <name>Slime</name>
+        <stats maxHp="10" attack="5" defense="2" speed="3"/>
+        <rewards experience="5" gold="2"/>
+    </monster>
+
+    <monster id="drakee">
+        <name>Drakee</name>
+        <stats maxHp="15" attack="8" defense="4" speed="5"/>
+        <rewards experience="10" gold="4"/>
+    </monster>
+
+    <monster id="dragonlord">
+        <name>Dragon Lord</name>
+        <stats maxHp="100" attack="30" defense="20" speed="10"/>
+        <rewards experience="200" gold="100"/>
+    </monster>
+
+</monsters>

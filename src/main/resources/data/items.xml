@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE items SYSTEM "items.dtd">
+
+<items>
+
+    <item id="herb" type="POTION" value="30">
+        <name>Medicinal Herb</name>
+        <description>Restores 30 HP.</description>
+    </item>
+
+    <item id="sword" type="WEAPON" value="10">
+        <name>Copper Sword</name>
+        <description>A basic sword. Increases attack by 10.</description>
+    </item>
+
+    <item id="shield" type="ARMOR" value="5">
+        <name>Leather Shield</name>
+        <description>A basic shield. Increases defense by 5.</description>
+    </item>
+
+</items>

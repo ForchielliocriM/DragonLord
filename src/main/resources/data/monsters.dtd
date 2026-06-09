@@ -1,0 +1,18 @@
+<!ELEMENT monsters (monster+)>
+
+<!ELEMENT monster (name, stats, rewards)>
+<!ATTLIST monster id ID #REQUIRED>
+
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT stats EMPTY>
+<!ATTLIST stats
+        maxHp    CDATA #REQUIRED
+        attack   CDATA #REQUIRED
+        defense  CDATA #REQUIRED
+        speed    CDATA #REQUIRED>
+
+<!ELEMENT rewards EMPTY>
+<!ATTLIST rewards
+        experience CDATA #REQUIRED
+        gold       CDATA #REQUIRED>
