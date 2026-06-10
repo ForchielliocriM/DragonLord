@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="it.unicam.cs.mpgc.rpg118716.ui.controller.CombatController"
+      alignment="CENTER" spacing="16"
+      style="-fx-background-color: #1a1a2e; -fx-padding: 30;">
+
+    <Label text="⚔ COMBATTIMENTO" style="-fx-font-size: 24; -fx-text-fill: #e94560; -fx-font-weight: bold;"/>
+
+    <!-- Fighter Info -->
+    <HBox spacing="60" alignment="CENTER">
+        <VBox alignment="CENTER" spacing="4">
+            <Label text="EROE" style="-fx-text-fill: #00d4ff; -fx-font-weight: bold;"/>
+            <Label fx:id="heroNameLabel"  text="-" style="-fx-text-fill: white;"/>
+            <Label fx:id="heroHpLabel"    text="-" style="-fx-text-fill: #e94560;"/>
+        </VBox>
+        <Label text="VS" style="-fx-font-size: 20; -fx-text-fill: #f0c040; -fx-font-weight: bold;"/>
+        <VBox alignment="CENTER" spacing="4">
+            <Label text="NEMICO" style="-fx-text-fill: #e94560; -fx-font-weight: bold;"/>
+            <Label fx:id="monsterNameLabel" text="-" style="-fx-text-fill: white;"/>
+            <Label fx:id="monsterHpLabel"   text="-" style="-fx-text-fill: #e94560;"/>
+        </VBox>
+    </HBox>
+
+    <!-- Combat Log -->
+    <TextArea fx:id="combatLog" editable="false" prefHeight="150"
+              style="-fx-background-color: #16213e; -fx-text-fill: white;
+                     -fx-font-size: 12; -fx-border-color: #444;"/>
+
+    <!-- Action buttons -->
+    <HBox spacing="16" alignment="CENTER">
+        <Button fx:id="attackButton" text="⚔ Attacca" onAction="#onAttack"
+                prefWidth="130" prefHeight="40"
+                style="-fx-background-color: #e94560; -fx-text-fill: white;
+                       -fx-font-size: 13; -fx-background-radius: 6;"/>
+        <Button fx:id="runButton" text="🏃 Fuggi" onAction="#onRun"
+                prefWidth="130" prefHeight="40"
+                style="-fx-background-color: #555; -fx-text-fill: white;
+                       -fx-font-size: 13; -fx-background-radius: 6;"/>
+    </HBox>
+
+</VBox>

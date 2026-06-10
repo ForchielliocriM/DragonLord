@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.canvas.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:id="rootPane"
+            fx:controller="it.unicam.cs.mpgc.rpg118716.ui.controller.GameController"
+            style="-fx-background-color: #1a1a2e;">
+
+    <!-- Top bar: Hero stats -->
+    <top>
+        <HBox spacing="20" style="-fx-padding: 10; -fx-background-color: #16213e;">
+            <Label fx:id="heroNameLabel"  text="Nome"  style="-fx-text-fill: #f0c040; -fx-font-weight: bold;"/>
+            <Label fx:id="heroHpLabel"    text="HP: -" style="-fx-text-fill: #e94560;"/>
+            <Label fx:id="heroLevelLabel" text="Lv: -" style="-fx-text-fill: #00d4ff;"/>
+            <Label fx:id="heroGoldLabel"  text="G: -"  style="-fx-text-fill: #f0c040;"/>
+        </HBox>
+    </top>
+
+    <!-- Center: map canvas -->
+    <center>
+        <Canvas fx:id="mapCanvas" width="400" height="350"/>
+    </center>
+
+    <!-- Bottom bar: logs and buttons -->
+    <bottom>
+        <VBox style="-fx-padding: 8; -fx-background-color: #16213e;" spacing="6">
+            <Label fx:id="logLabel" text="Benvenuto nel mondo di DragonLord!"
+                   style="-fx-text-fill: white; -fx-font-size: 12;"/>
+            <HBox spacing="10" alignment="CENTER">
+                <Button text="Salva" onAction="#onSave"
+                        style="-fx-background-color: #e94560; -fx-text-fill: white;"/>
+                <Button text="Menu" onAction="#onMenu"
+                        style="-fx-background-color: #555; -fx-text-fill: white;"/>
+            </HBox>
+        </VBox>
+    </bottom>
+
+</BorderPane>
