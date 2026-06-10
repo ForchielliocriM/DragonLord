@@ -1,0 +1,77 @@
+/* ===========================
+   DragonLord — Global Styles
+   =========================== */
+
+/* Basic style for all Buttons */
+.button {
+    -fx-cursor: hand;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.button:hover {
+    -fx-opacity: 0.85;
+}
+
+.button:pressed {
+    -fx-opacity: 0.7;
+}
+
+/* Generic labels */
+.label {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Combat Log TextArea */
+.text-area {
+    -fx-font-family: "Courier New", monospace;
+    -fx-background-color: #16213e;
+    -fx-text-fill: white;
+    -fx-border-color: #444444;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.text-area .content {
+    -fx-background-color: #16213e;
+}
+
+.text-area:focused {
+    -fx-border-color: #f0c040;
+}
+
+/* ScrollBar inside TextArea */
+.text-area .scroll-bar {
+    -fx-background-color: #1a1a2e;
+}
+
+.text-area .scroll-bar .thumb {
+    -fx-background-color: #444444;
+    -fx-background-radius: 4;
+}
+
+/* Text Input Dialog */
+.dialog-pane {
+    -fx-background-color: #1a1a2e;
+    -fx-border-color: #f0c040;
+    -fx-border-width: 1;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #16213e;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: #f0c040;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane .content.label {
+    -fx-text-fill: white;
+}
+
+.dialog-pane .button-bar .button {
+    -fx-background-color: #e94560;
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+}
