@@ -77,4 +77,4 @@ per comprendere meglio alcuni concetti teorici.
 ---
 
 📌 Per una descrizione più dettagliata dell'uso dell'AI, consultare
-la **[Wiki](https://github.com/ForchielliocriM/DragonLord/wiki) del repository**.
+la **[Wiki](https://github.com/ForchielliocriM/DragonLord/wiki)** del repository.
